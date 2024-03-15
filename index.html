@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form id="myForm">
+            <div class="left-column">
+                <h2>Information Form</h2>
+                <div>
+                    <input type="text" id="fullname" name="fullname" placeholder="Full Name">
+                    <div class="error" id="fullnameError"></div>
+                </div>
+                <div>
+                    <input type="email" id="email" name="email" placeholder="Email">
+                    <div class="error" id="emailError"></div>
+                </div>
+                <div>
+                    <input type="password" id="password" name="password" placeholder="Password">
+                    <div class="error" id="passwordError"></div>
+                </div>
+                <div>
+                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password">
+                    <div class="error" id="confirmPasswordError"></div>
+                </div>
+            </div>
+            <div class="right-column">
+                <div>
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender">
+                        <option value="">Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                    <div class="error" id="genderError"></div>
+                </div>
+                <div>
+                    <input type="tel" id="mobile" name="mobile" placeholder="Mobile Number">
+                    <div class="error" id="mobileError"></div>
+                </div>
+                <div>
+                    <input type="number" id="age" name="age" placeholder="Age">
+                    <div class="error" id="ageError"></div>
+                </div>
+                <div>
+                    <input type="date" id="birthdate" name="birthdate">
+                    <div class="error" id="birthdateError"></div>
+                </div>
+                <input type="submit" value="Submit"> <!-- Moved the submit button here -->
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
